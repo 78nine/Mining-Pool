@@ -16,6 +16,7 @@ ________________________________________________________________________________
 #include <LLC/aes/aes.h>
 #include <TAO/Util/mutex.h>
 
+#include <stdexcept>
 #include <openssl/rand.h>
 
 namespace memory

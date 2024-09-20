@@ -218,6 +218,7 @@ namespace Ledger
         LLC::CBigNum bnPrime(hashTest);
 
         return (BN_is_prime_ex(bnPrime.getBN(), 1, nullptr, nullptr) == 1);
+        //return (BN_check_prime(bnPrime.getBN(), nullptr, nullptr) == 1); // TODO: check if that's the correct way to replace the deprecated line above
     }
 
 
